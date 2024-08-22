@@ -1,0 +1,277 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+body {
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+    
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+    box-shadow: 0px 0px 22px 0px black;
+    z-index: +2;
+   
+}
+
+h1 {
+    padding-left: 40px;
+}
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+.primary {
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+.About {
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    
+}
+
+#text {
+    max-width: 600px;
+    height:auto;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.slider {
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    padding-left: 10px;
+    margin-left: 20px;
+    position: relative;
+   
+    
+}
+.slider img {
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius:60px;  
+    position: absolute;
+    top: 10%;
+    left: 5%;   
+}
+#img-1 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+#img-3 {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.slider img:first-child {
+    z-index:1;
+}
+
+.slider img:nth-child(2){
+    z-index:0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+}
+
+.dot {
+    cursor:pointer;
+    height:15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/*ul img {
+    height: 50px;
+    width: 50px;
+    
+}*/
+
+.tertiary {
+    margin-left: 20%;
+    display: inline-flex;
+    width: 100%;
+}
+
+.tertiary button {
+    position: relative;
+    padding: 30px;
+    top: 30%;
+    left: 200%;
+    border-radius: 21px;
+    border-color: mediumslateblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+footer {
+    background-image: linear-gradient(white, white,pink);
+    border: solid black 1px;
+    border-radius: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+footer * {
+    display: inline;
+    margin: 80px;  
+}
+
+/*Begin mobile screen*/
+@media screen and (max-width:639px) {
+    .slider {
+        display: none;
+    }
+
+    .navigation-button{
+        display: none;
+    }
+
+    h1 {
+        padding-left: 10px;
+    }
+    header * {
+        display: flex;
+    }
+    
+    header li {
+        margin: 10px;
+    }
+    
+    header li a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    .About {
+        padding: 10px;
+    }
+
+    .tertiary {
+        margin-left: 0%;
+        display: block;
+        width: 100%;
+    }
+    .tertiary button {
+        display: none;
+    }
+
+    footer {
+        background-image: linear-gradient(white, white,darkgreen);
+        border: solid black 1px;
+        border-radius: 20px;
+        margin: 10px;
+        
+    }
+    
+    footer * {
+        display: inline;
+        margin: 10px;  
+        font-size: small;
+    }
+
+}
+
+/*tablet*/
+@media screen and (min-width:640px) and (max-width:960px){
+
+    h1 {
+        padding-left: 10px;
+    }
+    header * {
+        display: flex;
+    }
+    
+    header li {
+        margin: 10px;
+    }
+    
+    header li a {
+        color: darkorange;
+        text-decoration: none;
+    }
+
+    
+    .About {
+        display: inline;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        
+    }
+    .tertiary {
+        margin-left: 10%;
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .tertiary button {
+        position: relative;
+        padding: 20px;
+        top: 40%;
+        left: 70%;
+        border-radius: 21px;
+        border-color: orange;
+        text-decoration: underline;
+        cursor: cell;
+    }
+
+    footer {
+        background-image: linear-gradient(white, white,orange);
+        border: solid black 1px;
+        border-radius: 20px;
+        margin: 10px;
+        
+    }
+    
+    footer * {
+        display: inline;
+        margin: 30px;  
+        font-size: small;
+    }
+
+
+
+}

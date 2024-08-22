@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <meta name = "Portfolio site" content = "Info about Basem">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <H1>About Basem</H1>
+            <nav>
+                <ul>
+                    <li><a href="About.Basem.co.uk">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        
+        <main>
+            <section class="primary">
+                <article class="About">
+                    <div id="text">
+                        <h2>About Me - Basem Mohamed</h2>
+                        <p>I should start by saying I have a background in Mechanical Engineering. I studied Mechanical Engineering at the University of Birmingham in the UK and went into the Automotive
+                            Engineering industry straight out of university. It was a priviledge to have had a hand in making some of the most exciting products one could hope to drive.
+                            Having spent a decade in that industry and finding my curiosity in cars had peaked I became more interested in how software worked as it has gradually had a larger influence on our lives and our world,
+                            not least the automotive industry.
+                            At the time of writing I am 34 years old and feel as though my previous career experience has a lot of parallels with my future one in software development. I hope this site can help showcase some of what
+                            I have learned and what I continue to develop.
+                        </p>
+                    </div>
+                    <div class="slider">
+                        <div id="img-1"><img src="2023-11-07 22.14.44.jpg" alt="Friendly picture of Basem"></div>
+                        <div id="img-2"><img src="2022-06-19 12.21.24.jpg" alt="another of me"></div>
+                        <div id="img-3"><img src="IMG-20240210-WA0048(1).jpg" alt="air hug"></div>
+                    </div>
+                    <div class="navigation-button">
+                        <span class="dot active" onclick="changeSlide(0)"></span>
+                        <span class="dot" onclick="changeSlide(1)"></span>
+                        <span class="dot" onclick="changeSlide(2)"></span>
+                    </div>
+                </article>
+            </section>
+            <section class="secondary">
+                <article>
+                    <h2 id="projects">
+                        Projects
+                    </h2>
+                    <ul>
+                        <li>Mangata Jewellery store</li>
+                        <p>One of the first landing pages I built for a hypothetical Jewellery store</p>
+
+                        <li>Foolish football</li>
+                        <p> This is one of my longer term projects. I wish to build a game site that allows you to 
+                            compete against frineds in a game based on real life football matches.
+                        </p>
+                    </ul>
+                </article>
+            </section>
+            <section class="tertiary">
+                <div>
+                    <h2 id="skills">Skills</h2>
+                    <ul>
+                        <li>Web development</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div>
+                    <button onclick="mssge()" id="motivater">Click for Motivation</button>
+                </div>
+            </section>
+            
+            <footer>
+                <article>
+                    <h2 id="contact">Contact Info</h2>
+                    <p><a href="basem_m_@hotmail.com">email</a></p>
+                    <p><a href="www.linkedin.com/in/basem-m-79327a3b">LinkedIn</a></p>
+                </article>
+            </footer>
+        </main>
+        <script type="text/javaScript" src="inspirationalmessages.js"></script>
+        <script type="text/javaScript" src="imgchanger.js"></script>
+    </body>
+    
+</html>
